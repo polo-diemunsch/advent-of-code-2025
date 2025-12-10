@@ -63,6 +63,9 @@ def find_pos(grid, char):
                 return i, j
     return -1, -1
 
+def sgn(x):
+    return (x > 0) - (x < 0)
+
 DIR4 = ((-1, 0), (0, 1), (1, 0), (0, -1)) # Clockwise URDL
 DIR8 = ((-1,0), (-1,1), (0,1), (1,1), (1,0), (1,-1), (0,-1), (-1,-1)) # Clockwise from U
 
